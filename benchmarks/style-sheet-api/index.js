@@ -59,29 +59,58 @@ function createCssString() {
 // AESTHETIC
 
 const { ClientRenderer } = require('@aesthetic/style');
-const { ServerRenderer } = require('@aesthetic/style/server');
 
-const aestheticClientRenderer = new ClientRenderer();
-const aestheticServerRenderer = new ServerRenderer();
+const aestheticRenderer = new ClientRenderer();
 
-suite.add('@aesthetic/style (ClientRenderer)', () => {
-  aestheticClientRenderer.renderRule(createCssRule());
+suite.add('aesthetic', () => {
+  aestheticRenderer.renderRule(createCssRule());
 });
 
-suite.add('@aesthetic/style (ServerRenderer)', () => {
-  aestheticServerRenderer.renderRule(createCssRule());
+// APHRODITE
+
+const { StyleSheet, css: cssAphrodite, reset: resetAphrodite } = require('aphrodite');
+
+suite.add('aphrodite', () => {
+  resetAphrodite();
+
+  const styles = StyleSheet.create({
+    element: createCssRule(),
+  });
+
+  cssAphrodite(styles.element);
 });
 
 // EMOTION
 
-const { css } = require('emotion');
+const { css: cssEmotion } = require('emotion');
 
 suite.add('emotion (css object)', () => {
-  css(createCssRule(true));
+  cssEmotion(createCssRule(true));
 });
 
 suite.add('emotion (css string)', () => {
-  css(createCssString());
+  cssEmotion(createCssString());
+});
+
+// FELA
+
+const { createRenderer } = require('fela');
+
+const felaRenderer = createRenderer();
+
+suite.add('fela', () => {
+  felaRenderer.renderRule(() => createCssRule(), {});
+});
+
+// JSS
+
+const jss = require('jss').default;
+const jssPreset = require('jss-preset-default').default;
+
+jss.setup(jssPreset());
+
+suite.add('jss', () => {
+  jss.createStyleSheet({ element: createCssRule() });
 });
 
 // Run all benchmarks
