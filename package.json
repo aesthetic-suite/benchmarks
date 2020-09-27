@@ -1,0 +1,17 @@
+{
+  "name": "aesthetic-benchmarks",
+  "version": "1.0.0",
+  "description": "Benchmarks against other CSS-in-JS solutions.",
+  "scripts": {},
+  "license": "MIT",
+  "dependencies": {
+    "@aesthetic/core": "^0.4.8",
+    "@aesthetic/style": "^0.4.5",
+    "emotion": "^10.0.27"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "jsdom": "^16.4.0",
+    "prettier": "^2.1.2"
+  }
+}
