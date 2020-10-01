@@ -45,7 +45,7 @@ function createCssString() {
     background-color: black;
     color: white;
     &:hover {
-      color: gray;
+      color: ${() => 'gray'};
     }
     @media (max-width: 600px) {
       width: 100%;
@@ -59,7 +59,6 @@ function createCssString() {
 // AESTHETIC
 
 const { ClientRenderer } = require('@aesthetic/style');
-
 const aestheticRenderer = new ClientRenderer();
 
 suite.add('aesthetic', () => {
@@ -84,18 +83,17 @@ suite.add('aphrodite', () => {
 
 const { css: cssEmotion } = require('emotion');
 
-suite.add('emotion (css object)', () => {
+suite.add('emotion', () => {
   cssEmotion(createCssRule(true));
 });
 
-suite.add('emotion (css string)', () => {
+suite.add('emotion (string)', () => {
   cssEmotion(createCssString());
 });
 
 // FELA
 
 const { createRenderer } = require('fela');
-
 const felaRenderer = createRenderer();
 
 suite.add('fela', () => {
@@ -111,6 +109,34 @@ jss.setup(jssPreset());
 
 suite.add('jss', () => {
   jss.createStyleSheet({ element: createCssRule() });
+});
+
+// STITCHES
+
+const { createCss } = require('@stitches/core');
+const stitchesCss = createCss({});
+
+suite.add('stitches', () => {
+  // Media query warnings
+  console.warn = () => {};
+  stitchesCss(createCssRule(true));
+});
+
+// STYLED COMPONENTS
+
+// const { css: styledCss } = require('styled-components');
+
+// suite.add('styled-components', () => {
+//   styledCss(createCssRule());
+// });
+
+// STYLETRON
+
+const { Client } = require('styletron-engine-atomic');
+const styletronClient = new Client();
+
+suite.add('styletron', () => {
+  styletronClient.renderStyle(createCssRule());
 });
 
 // Run all benchmarks
