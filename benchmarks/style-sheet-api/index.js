@@ -58,11 +58,11 @@ function createCssString() {
 
 // AESTHETIC
 
-const { ClientRenderer } = require('@aesthetic/style');
-const aestheticRenderer = new ClientRenderer();
+const { createClientEngine } = require('@aesthetic/style');
+const aestheticEngine = createClientEngine();
 
 suite.add('aesthetic', () => {
-  aestheticRenderer.renderRule(createCssRule());
+  aestheticEngine.renderRule(createCssRule());
 });
 
 // APHRODITE
