@@ -5,21 +5,24 @@
   "scripts": {},
   "license": "MIT",
   "dependencies": {
-    "@aesthetic/core": "^0.5.0",
+    "@aesthetic/core": "^0.5.1",
     "@aesthetic/style": "^0.5.1",
+    "@emotion/css": "^11.0.0",
+    "@filbert-js/core": "^0.0.13",
     "@stitches/core": "^0.0.2",
     "aphrodite": "^2.4.0",
-    "emotion": "^10.0.27",
-    "fela": "^11.4.0",
-    "jss": "^10.4.0",
-    "jss-preset-default": "^10.4.0",
+    "fela": "^11.5.0",
+    "jss": "^10.5.0",
+    "jss-preset-default": "^10.5.0",
     "react": "^16.13.1",
-    "styled-components": "^5.2.0",
-    "styletron-engine-atomic": "^1.4.6"
+    "style9": "^0.5.7",
+    "styled-components": "^5.2.1",
+    "styletron-engine-atomic": "^1.4.6",
+    "trousers": "^3.0.2"
   },
   "devDependencies": {
     "benchmark": "^2.1.4",
     "jsdom": "^16.4.0",
-    "prettier": "^2.1.2"
+    "prettier": "^2.2.1"
   }
 }

@@ -81,7 +81,7 @@ suite.add('aphrodite', () => {
 
 // EMOTION
 
-const { css: cssEmotion } = require('emotion');
+const { css: cssEmotion } = require('@emotion/css');
 
 suite.add('emotion', () => {
   cssEmotion(createCssRule(true));
@@ -122,7 +122,7 @@ suite.add('stitches', () => {
   stitchesCss(createCssRule(true));
 });
 
-// STYLED COMPONENTS
+// STYLED COMPONENTS (CRASHES?)
 
 // const { css: styledCss } = require('styled-components');
 
@@ -138,6 +138,34 @@ const styletronClient = new Client();
 suite.add('styletron', () => {
   styletronClient.renderStyle(createCssRule());
 });
+
+// FILBERT
+
+const { css: filbertCss } = require('@filbert-js/core');
+
+suite.add('filbert', () => {
+  const styles = filbertCss`
+    ${createCssString()}
+  `;
+});
+
+// STYLE9 (ESM ONLY)
+
+// const style9 = require('style9');
+
+// suite.add('style9', () => {
+//   style9.create(createCssRule());
+// });
+
+// TROUSERS (ESM ONLY)
+
+// const { css: trousersCss } = require('@trousers/core');
+
+// suite.add('trousers', () => {
+//   const styles = trousersCss`
+//     ${createCssString()}
+//   `;
+// });
 
 // Run all benchmarks
 suite
