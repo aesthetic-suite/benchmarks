@@ -2,7 +2,9 @@
   "name": "aesthetic-benchmarks",
   "version": "1.0.0",
   "description": "Benchmarks against other CSS-in-JS solutions.",
-  "scripts": {},
+  "scripts": {
+    "bench:styles": "node benchmarks/style-sheet-api/index.mjs"
+  },
   "license": "MIT",
   "dependencies": {
     "@aesthetic/core": "^0.5.1",

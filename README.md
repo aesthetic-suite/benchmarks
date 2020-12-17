@@ -7,7 +7,7 @@ Benchmarks of popular CSS-in-JS libraries.
 ## Style insertion API
 
 ```
-node benchmarks/style-sheet-api/index.js
+yarn run bench:styles
 
 jss x 8,948 ops/sec ±12.28% (82 runs sampled)
 stitches x 45,065 ops/sec ±4.41% (92 runs sampled)
@@ -19,6 +19,10 @@ aesthetic x 279,221 ops/sec ±0.77% (94 runs sampled)
 fela x 282,441 ops/sec ±2.51% (94 runs sampled)
 filbert x 763,932 ops/sec ±3.55% (85 runs sampled)
 ```
+
+|           | Rules |
+| --------- | :---: |
+| Aesthetic |  ✅   |
 
 # React API
 
