@@ -21,42 +21,42 @@ fela x 282,441 ops/sec ±2.51% (94 runs sampled)
 filbert x 763,932 ops/sec ±3.55% (85 runs sampled)
 ```
 
-|                         | Aesthetic | Aphrodite | Emotion |
-| ----------------------- | :-------: | :-------: | :-----: |
-| Styles                  |           |           |         |
-| └ Declarations          |    🟢     |    🟢     |   🟢    |
-| └ Pseudos               |    🟢     |    🟢     |   🟢    |
-| └ Attributes            |    🟢     |    🔴     |   🟢    |
-| └ Selectors             |    🟢     |    🔴     |   🟢    |
-| └ Variables             |    🟢     |    🔴     |   🔴    |
-| └ @font-face            |    🟢     |    🟢     |   🟢    |
-| └ @import               |    🟢     |    🔴     |   🟢    |
-| └ @keyframes            |    🟢     |    🟢     |   🟢    |
-| └ @media                |    🟢     |    🟢     |   🟢    |
-| └ @supports             |    🟢     |    🟢     |   🟢    |
-| Framework               |           |           |         |
-| └ Atomic CSS            |    🟢     |    🔴     |   🔴    |
-| └ Cache management      |    🟢     |    🔴     |   🟢    |
-| └ Client hydration      |    🟢     |    🟢     |   🟢    |
-| └ Custom properties     |    🟢     |    🟡     |   🔴    |
-| └ Design system         |    🟢     |    🔴     |   🔴    |
-| └ Deterministic classes |    🟢     |    🟢     |   🟢    |
-| └ Directionality (RTL)  |    🟢     |    🔴     |   🔵    |
-| └ Global injection      |    🟢     |    🟢     |   🟢    |
-| └ Mixins                |    🟢     |    🔴     |   🔴    |
-| └ Plugins               |    🟡     |    🔴     |   🔴    |
-| └ Server rendering      |    🟢     |    🟢     |   🟢    |
-| └ Sheet management      |    🟡     |    🔴     |   🔴    |
-| └ Specificity           |    🟢     |    🟢     |   🟢    |
-| └ Test utilities        |    🟢     |    🟢     |   🟢    |
-| └ Themes                |    🟢     |    🔴     |   🟢    |
-| └ Unit suffixes         |    🟢     |    🔴     |   🔴    |
-| └ Vendor prefixing      |    🟢     |    🔴     |   🔴    |
+|                         | Aesthetic | Aphrodite | Emotion | Fela | Filbert | JSS |
+| ----------------------- | :-------: | :-------: | :-----: | :--: | :-----: | :-: |
+| Styles                  |           |           |         |      |         |     |
+| └ Declarations          |    🟢     |    🟢     |   🟢    |  🟢  |   🟢    | 🟢  |
+| └ Pseudos               |    🟢     |    🟢     |   🟢    |  🟢  |   🟢    | 🔵  |
+| └ Attributes            |    🟢     |    🔴     |   🟢    |  🟢  |   🟢    | 🔵  |
+| └ Selectors             |    🟢     |    🔴     |   🟢    |  🟢  |   🟢    | 🔵  |
+| └ Variables             |    🟢     |    🔴     |   🔴    |  🔴  |   🔴    | 🔴  |
+| └ @font-face            |    🟢     |    🟢     |   🟢    |  🟢  |   🔴    | 🟢  |
+| └ @import               |    🟢     |    🔴     |   🟢    |  🔴  |   🔴    | 🟢  |
+| └ @keyframes            |    🟢     |    🟢     |   🟢    |  🟢  |   🟢    | 🟢  |
+| └ @media                |    🟢     |    🟢     |   🟢    |  🟢  |   🟢    | 🟢  |
+| └ @supports             |    🟢     |    🟢     |   🟢    |  🟢  |   🟢    | 🟢  |
+| Framework               |           |           |         |      |         |     |
+| └ Atomic CSS            |    🟢     |    🔴     |   🔴    |  🟢  |   🔴    | 🔴  |
+| └ Cache management      |    🟢     |    🔴     |   🟢    |  🔴  |   🔴    | 🔴  |
+| └ Client hydration      |    🟢     |    🟢     |   🟢    |  🟢  |   🟢    | 🟢  |
+| └ Custom properties     |    🔵     |    🟡     |   🔴    |  🔵  |   🔴    | 🔵  |
+| └ Design system         |    🟢     |    🔴     |   🔴    |  🔴  |   🔴    | 🔴  |
+| └ Deterministic classes |    🟢     |    🟢     |   🟢    |  🔴  |   🔴    | 🔴  |
+| └ Directionality (RTL)  |    🔵     |    🔴     |   🔵    |  🔵  |   🔴    | 🔵  |
+| └ Global injection      |    🟢     |    🟢     |   🟢    |  🟢  |   🟢    | 🔵  |
+| └ Mixins                |    🔵     |    🔴     |   🔴    |  🔴  |   🔴    | 🔴  |
+| └ Plugins               |    🟡     |    🔴     |   🔴    |  🟢  |   🔴    | 🟢  |
+| └ Server rendering      |    🟢     |    🟢     |   🟢    |  🟢  |   🟢    | 🟢  |
+| └ Sheet management      |    🟡     |    🔴     |   🔴    |  🔴  |   🔴    | 🟢  |
+| └ Specificity           |    🟢     |    🟢     |   🟢    | ⚫️  |   🟢    | ⚫️ |
+| └ Test utilities        |    🟢     |    🟢     |   🟢    |  🟢  |   🔴    | 🔴  |
+| └ Unit suffixes         |    🟢     |    🔴     |   🔴    |  🔵  |   🔴    | 🔵  |
+| └ Vendor prefixing      |    🔵     |    🔴     |   🔴    |  🔵  |   🔵    | 🔵  |
 
 - 🟢 Supported natively
 - 🔵 Supported through plugins/libs
 - 🟡 Partial support
 - 🔴 Not supported
+- ⚫️ Unknown support
 
 # React API
 
