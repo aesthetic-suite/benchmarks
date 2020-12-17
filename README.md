@@ -2,7 +2,8 @@
 
 Benchmarks of popular CSS-in-JS libraries.
 
-> Do note that all libraries _do not_ offer the same features or level of support.
+> Do note that libraries _do not_ offer the same features or level of support. This is denoted with
+> the tables below.
 
 ## Style insertion API
 
@@ -20,9 +21,42 @@ fela x 282,441 ops/sec ±2.51% (94 runs sampled)
 filbert x 763,932 ops/sec ±3.55% (85 runs sampled)
 ```
 
-|           | Rules |
-| --------- | :---: |
-| Aesthetic |  ✅   |
+|                         | Aesthetic | Aphrodite | Emotion |
+| ----------------------- | :-------: | :-------: | :-----: |
+| Styles                  |           |           |         |
+| └ Declarations          |    🟢     |    🟢     |   🟢    |
+| └ Pseudos               |    🟢     |    🟢     |   🟢    |
+| └ Attributes            |    🟢     |    🔴     |   🟢    |
+| └ Selectors             |    🟢     |    🔴     |   🟢    |
+| └ Variables             |    🟢     |    🔴     |   🔴    |
+| └ @font-face            |    🟢     |    🟢     |   🟢    |
+| └ @import               |    🟢     |    🔴     |   🟢    |
+| └ @keyframes            |    🟢     |    🟢     |   🟢    |
+| └ @media                |    🟢     |    🟢     |   🟢    |
+| └ @supports             |    🟢     |    🟢     |   🟢    |
+| Framework               |           |           |         |
+| └ Atomic CSS            |    🟢     |    🔴     |   🔴    |
+| └ Cache management      |    🟢     |    🔴     |   🟢    |
+| └ Client hydration      |    🟢     |    🟢     |   🟢    |
+| └ Custom properties     |    🟢     |    🟡     |   🔴    |
+| └ Design system         |    🟢     |    🔴     |   🔴    |
+| └ Deterministic classes |    🟢     |    🟢     |   🟢    |
+| └ Directionality (RTL)  |    🟢     |    🔴     |   🔵    |
+| └ Global injection      |    🟢     |    🟢     |   🟢    |
+| └ Mixins                |    🟢     |    🔴     |   🔴    |
+| └ Plugins               |    🟡     |    🔴     |   🔴    |
+| └ Server rendering      |    🟢     |    🟢     |   🟢    |
+| └ Sheet management      |    🟡     |    🔴     |   🔴    |
+| └ Specificity           |    🟢     |    🟢     |   🟢    |
+| └ Test utilities        |    🟢     |    🟢     |   🟢    |
+| └ Themes                |    🟢     |    🔴     |   🟢    |
+| └ Unit suffixes         |    🟢     |    🔴     |   🔴    |
+| └ Vendor prefixing      |    🟢     |    🔴     |   🔴    |
+
+- 🟢 Supported natively
+- 🔵 Supported through plugins/libs
+- 🟡 Partial support
+- 🔴 Not supported
 
 # React API
 
