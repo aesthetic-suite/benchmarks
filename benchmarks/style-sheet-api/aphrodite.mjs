@@ -4,7 +4,7 @@ import { createCssRule } from '../helpers.mjs';
 export default (suite) => {
   const { StyleSheet, css, reset } = aphrodite;
 
-  suite.add('aphrodite', () => {
+  suite.add('Aphrodite (object)', () => {
     reset();
 
     const styles = StyleSheet.create({

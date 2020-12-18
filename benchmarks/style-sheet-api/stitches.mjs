@@ -8,7 +8,7 @@ export default (suite) => {
   // Ignore media query warnings
   console.warn = () => {};
 
-  suite.add('stitches', () => {
+  suite.add('Stitches (object)', () => {
     css(createCssRule(true));
   });
 };

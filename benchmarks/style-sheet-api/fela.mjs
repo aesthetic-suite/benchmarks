@@ -5,7 +5,7 @@ export default (suite) => {
   const { createRenderer } = fela;
   const renderer = createRenderer();
 
-  suite.add('fela', () => {
+  suite.add('Fela (object)', () => {
     renderer.renderRule(() => createCssRule(), {});
   });
 };

@@ -4,7 +4,7 @@ import { createCssString } from '../helpers.mjs';
 export default (suite) => {
   const { css } = filbert;
 
-  suite.add('filbert', () => {
+  suite.add('Filbert (string)', () => {
     css`
       ${createCssString()}
     `;

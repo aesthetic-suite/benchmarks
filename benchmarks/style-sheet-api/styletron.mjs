@@ -5,7 +5,7 @@ export default (suite) => {
   const { Client } = styletron;
   const client = new Client();
 
-  suite.add('styletron', () => {
+  suite.add('Styletron (object)', () => {
     client.renderStyle(createCssRule());
   });
 };

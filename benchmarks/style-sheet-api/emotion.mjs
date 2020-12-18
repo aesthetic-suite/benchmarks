@@ -4,11 +4,11 @@ import { createCssRule, createCssString } from '../helpers.mjs';
 export default (suite) => {
   const { css } = emotion;
 
-  suite.add('emotion', () => {
+  suite.add('Emotion (object)', () => {
     css(createCssRule(true));
   });
 
-  suite.add('emotion (string)', () => {
+  suite.add('Emotion (string)', () => {
     css(createCssString());
   });
 };

@@ -4,7 +4,7 @@ import { createCssString } from '../helpers.mjs';
 export default (suite) => {
   const { css } = trousers;
 
-  suite.add('trousers', () => {
+  suite.add('Trousers (stsring)', () => {
     css`
       ${createCssString()}
     `;

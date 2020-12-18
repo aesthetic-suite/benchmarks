@@ -5,7 +5,7 @@ import { createCssRule } from '../helpers.mjs';
 export default (suite) => {
   jss.default.setup(jssPreset.default());
 
-  suite.add('jss', () => {
+  suite.add('JSS (object)', () => {
     jss.default.createStyleSheet({ element: createCssRule() });
   });
 };
