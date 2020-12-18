@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "description": "Benchmarks against other CSS-in-JS solutions.",
   "scripts": {
+    "bench:react": "node benchmarks/react/index.mjs",
     "bench:styles": "node benchmarks/style-sheet-api/index.mjs"
   },
   "license": "MIT",
+  "resolutions": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "dependencies": {
     "@aesthetic/core": "^0.6.3",
+    "@aesthetic/react": "^0.6.1",
     "@aesthetic/style": "^0.5.3",
     "@emotion/css": "^11.0.0",
     "@filbert-js/core": "^0.0.13",
@@ -17,14 +23,19 @@
     "jss": "^10.5.0",
     "jss-preset-default": "^10.5.0",
     "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "style9": "^0.5.7",
     "styled-components": "^5.2.1",
     "styletron-engine-atomic": "^1.4.6",
     "trousers": "^3.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
     "benchmark": "^2.1.4",
     "jsdom": "^16.4.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "react-benchmark": "^3.0.0"
   }
 }

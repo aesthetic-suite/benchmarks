@@ -62,7 +62,14 @@ Filbert (string) x 822,710 ops/sec ±1.74% (86 runs sampled)
 
 # React API
 
-Coming soon...
+Benchmarking different React based APIs and how many renders are possible a second. Pass
+`DEBUG=true` to run in development mode.
+
+```
+yarn run bench:react
+
+Aesthetic (useCss) x 103,501 ops/sec ±4.01% (53 runs sampled)
+```
 
 |               | Aesthetic | Aphrodite | Emotion | Fela | Filbert | JSS | Stitches | Style9 | Styletron |
 | ------------- | :-------: | :-------: | :-----: | :--: | :-----: | :-: | :------: | :----: | :-------: |
