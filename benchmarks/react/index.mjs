@@ -29,7 +29,7 @@ function format(label, stats) {
 // Run all benchmarks
 async function benchmark() {
   try {
-    await run('Aesthetic (useCss)', 'aesthetic/use-css.jsx');
+    await run('Aesthetic (useCss)', 'aesthetic/useCss.tsx');
   } catch (error) {
     console.error(error);
     process.exitCode = 1;

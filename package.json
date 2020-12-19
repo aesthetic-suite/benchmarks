@@ -7,10 +7,6 @@
     "bench:styles": "node benchmarks/style-sheet-api/index.mjs"
   },
   "license": "MIT",
-  "resolutions": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
   "dependencies": {
     "@aesthetic/core": "^0.6.3",
     "@aesthetic/react": "^0.6.1",
@@ -33,7 +29,11 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@types/faker": "^5.1.5",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "benchmark": "^2.1.4",
+    "faker": "^5.1.0",
     "jsdom": "^16.4.0",
     "prettier": "^2.2.1",
     "react-benchmark": "^3.0.0"
