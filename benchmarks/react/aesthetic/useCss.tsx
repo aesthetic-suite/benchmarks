@@ -1,50 +1,46 @@
-import React, { useMemo } from 'react';
-import { useCss } from '@aesthetic/react';
+import React from 'react';
+import { Rule, useCss } from '@aesthetic/react';
 import { Table, TableRow, TableRowProps } from '../Table';
 
+const rowStyles: Rule = {
+  backgroundColor: '#fff',
+  ':hover': {
+    backgroundColor: '#eee',
+  },
+  '> td': {
+    border: '1px solid #ccc',
+    padding: 8,
+  },
+};
+
 function Row(props: Omit<TableRowProps, 'className'>) {
-  const styles = useMemo(
-    () => ({
-      backgroundColor: '#fff',
-      ':hover': {
-        backgroundColor: '#eee',
-      },
-      '> td': {
-        border: '1px solid #ccc',
-        padding: 8,
-      },
-    }),
-    [],
-  );
-  const className = useCss(styles);
+  const className = useCss(rowStyles);
 
   return <TableRow className={className} {...props} />;
 }
 
-function AestheticUseCss() {
-  const styles = useMemo(
-    () => ({
-      width: '100%',
-      maxWidth: '100%',
-      margin: 0,
-      padding: 0,
-      backgroundColor: '#fff',
+const tableStyles: Rule = {
+  width: '100%',
+  maxWidth: '100%',
+  margin: 0,
+  padding: 0,
+  backgroundColor: '#fff',
+  border: '1px solid #ccc',
+  borderCollapse: 'collapse',
+  borderSpacing: 0,
+  '> thead > tr': {
+    backgroundColor: '#eee',
+    '> th': {
       border: '1px solid #ccc',
-      borderCollapse: 'collapse',
-      borderSpacing: 0,
-      '> thead > tr': {
-        backgroundColor: '#eee',
-        '> th': {
-          border: '1px solid #ccc',
-          padding: 8,
-          fontWeight: 'bold',
-          textAlign: 'center',
-        },
-      },
-    }),
-    [],
-  );
-  const className = useCss(styles);
+      padding: 8,
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
+  },
+};
+
+function AestheticUseCss() {
+  const className = useCss(tableStyles);
 
   return (
     <Table className={className}>
