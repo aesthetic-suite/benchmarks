@@ -1,3 +1,21 @@
+// Comes from react-benchmark
+import humanizeNumber from 'humanize-number';
+import pluralize from 'pluralize';
+
+export function prepareStats(label, result) {
+  return {
+    label,
+    marginOfError: result.stats.rme.toFixed(2),
+    ops: result.hz || 0,
+    opsPerSecond: result.hz ? humanizeNumber(result.hz.toFixed(result.hz < 100 ? 2 : 0)) : 0,
+    runCount: pluralize('run', result.stats.sample.length, true),
+  };
+}
+
+export function formatStats({ label, marginOfError, opsPerSecond, runCount }) {
+  return `${label} x ${opsPerSecond} ops/sec ±${marginOfError}% (${runCount} sampled)`;
+}
+
 export function createCssRule(ampersand = false) {
   const amp = ampersand ? '&' : '';
 

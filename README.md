@@ -1,6 +1,7 @@
 # CSS-in-JS Benchmarks
 
-Benchmarks of popular CSS-in-JS libraries.
+Benchmarks of popular CSS-in-JS libraries. Ran on a 16" MacBook Pro: 2.6 GHz 6-core i7 CPU, 16 GB
+DDR4 RAM.
 
 Do note that libraries being benchmarked _do not_ offer the same feature set or level of parity, so
 take this into consideration when choosing a solution. Speed isn't everything! Features are denoted
@@ -12,6 +13,8 @@ with the tables below and the following legend.
 - ⚫️ Unknown support
 - 🔴 No support
 
+> Please create an issue if any of this information is wrong, or the test cases can be improved.
+
 ## Styles API
 
 Benchmarking raw CSS insertion with either an object or string.
@@ -19,15 +22,15 @@ Benchmarking raw CSS insertion with either an object or string.
 ```
 yarn run bench:styles
 
-Aphrodite (object) x 23,311 ops/sec ±1.57% (91 runs sampled)
-JSS (object) x 23,749 ops/sec ±1.28% (91 runs sampled)
-Stitches (object) x 39,698 ops/sec ±0.94% (93 runs sampled)
-Styletron (object) x 104,035 ops/sec ±0.98% (92 runs sampled)
-Emotion (object) x 107,910 ops/sec ±2.22% (88 runs sampled)
-Aesthetic (object) x 162,375 ops/sec ±1.73% (84 runs sampled)
-Emotion (string) x 190,055 ops/sec ±1.04% (88 runs sampled)
-Fela (object) x 194,836 ops/sec ±0.92% (95 runs sampled)
-Filbert (string) x 655,125 ops/sec ±0.86% (95 runs sampled)
+Filbert (string) x 573,866 ops/sec ±2.67% (93 runs sampled)
+Emotion (string) x 199,179 ops/sec ±1.11% (96 runs sampled)
+Fela (object) x 193,354 ops/sec ±2.20% (93 runs sampled)
+Aesthetic (object) x 165,687 ops/sec ±1.69% (88 runs sampled)
+Emotion (object) x 121,193 ops/sec ±0.97% (95 runs sampled)
+Styletron (object) x 106,192 ops/sec ±0.62% (95 runs sampled)
+Stitches (object) x 38,206 ops/sec ±0.88% (94 runs sampled)
+Aphrodite (object) x 24,367 ops/sec ±1.62% (87 runs sampled)
+JSS (object) x 22,250 ops/sec ±1.05% (95 runs sampled)
 ```
 
 |                         | Aesthetic | Aphrodite | Emotion | Fela | Filbert | JSS | Stitches | Style9 | Styletron | Trousers |
@@ -68,10 +71,14 @@ Benchmarking different React based APIs and how many renders are possible a seco
 ```
 yarn run bench:react
 
-Aesthetic (createStyled) x 91.96 ops/sec ±3.53% (54 runs sampled)
-Aesthetic (useStyles) x 93.01 ops/sec ±2.98% (55 runs sampled)
-Aesthetic (useCss) x 146 ops/sec ±1.55% (58 runs sampled)
-Aphrodite [no selectors] x 154 ops/sec ±4.69% (54 runs sampled)
+Emotion (css: string) x 148 ops/sec ±3.18% (56 runs sampled)
+Aphrodite [no selectors] x 148 ops/sec ±3.50% (56 runs sampled)
+Aesthetic (useCss) x 138 ops/sec ±5.07% (52 runs sampled)
+Aesthetic (useStyles) x 137 ops/sec ±5.37% (56 runs sampled)
+Emotion (css: object) x 134 ops/sec ±5.11% (57 runs sampled)
+Emotion (styled: string) x 134 ops/sec ±3.37% (55 runs sampled)
+Emotion (styled: object) x 130 ops/sec ±5.13% (54 runs sampled)
+Aesthetic (createStyled) x 128 ops/sec ±4.42% (54 runs sampled)
 ```
 
 |                      | Aesthetic | Aphrodite | Emotion | Fela | Filbert | JSS | Stitches | Style9 | Styletron |

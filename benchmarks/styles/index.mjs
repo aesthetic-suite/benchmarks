@@ -1,5 +1,6 @@
 import Benchmark from 'benchmark';
 import jsdom from 'jsdom';
+import { prepareStats, formatStats } from '../helpers.mjs';
 import aesthetic from './aesthetic.mjs';
 import aphrodite from './aphrodite.mjs';
 import emotion from './emotion.mjs';
@@ -32,11 +33,17 @@ styletron(suite);
 // trousers(suite);
 
 // Run all benchmarks
+const results = [];
+
 suite
   .on('cycle', function cycle(event) {
-    console.log(String(event.target));
+    results.push(prepareStats(event.target.name, event.target));
   })
   .on('complete', function complete() {
-    console.log(`Fastest is ${this.filter('fastest').map('name')}`);
+    results
+      .sort((a, b) => b.ops - a.ops)
+      .forEach((result) => {
+        console.log(formatStats(result));
+      });
   })
   .run();

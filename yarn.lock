@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aesthetic/core-react@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@aesthetic/core-react/-/core-react-0.1.4.tgz#c889f87f67cfe20d61cff4f965690604e8833a6e"
-  integrity sha512-jBqBRb52leryDsJY2hqT9J9uHX1y2EkE1lxGcCo0gRenC1XPG94SS+XgaVNw4IsTklqwIYQWukTxDnmk/CaZ6Q==
+"@aesthetic/core-react@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@aesthetic/core-react/-/core-react-0.1.5.tgz#235d0aee9965640d90d5b604070ab4b2ad026da5"
+  integrity sha512-WspGFdY9SGDJUnDBQkEKrhq6rowAhFZ+V7Kq5lXQHm/8mepkMpEdxH60HoGBkE+kE49vuzOqf2Tzru/mo6HQ4Q==
   dependencies:
     "@aesthetic/utils" "^0.6.1"
     direction "^1.0.4"
@@ -21,13 +21,13 @@
     "@aesthetic/types" "^0.4.2"
     "@aesthetic/utils" "^0.6.1"
 
-"@aesthetic/react@^0.6.4":
-  version "0.6.4"
-  resolved "https://registry.yarnpkg.com/@aesthetic/react/-/react-0.6.4.tgz#0f92dec1ef7a5a92069161d47a359f7e59d6db31"
-  integrity sha512-SDaCT5YAynqMa+YEoenPaeiGbBfmF6ovARmLjKglejv/4w8zWfiwNE1nNTgV2kILlFLI0mWM5Txly7pzwsyv+g==
+"@aesthetic/react@^0.6.5":
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/@aesthetic/react/-/react-0.6.5.tgz#80056d230529047421b198a46e5011ac452d4f15"
+  integrity sha512-zOUgf+4y5nadvyJuYjg5znH71csERDWHJ03wdUpjfD9IlfG3klE8pwxAGw0942O9lmjJh7rett98wx3drV7Hqw==
   dependencies:
     "@aesthetic/core" "^0.7.2"
-    "@aesthetic/core-react" "^0.1.4"
+    "@aesthetic/core-react" "^0.1.5"
     "@aesthetic/style" "^0.6.2"
     "@aesthetic/utils" "^0.6.1"
 
