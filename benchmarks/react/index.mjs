@@ -32,6 +32,8 @@ async function benchmark() {
     await run('Aesthetic (createStyled)', 'aesthetic/createStyled.tsx');
     await run('Aesthetic (useCss)', 'aesthetic/useCss.tsx');
     await run('Aesthetic (useStyles)', 'aesthetic/useStyles.tsx');
+
+    await run('Aphrodite [no selectors]', 'aphrodite/index.tsx');
   } catch (error) {
     console.error(error);
     process.exitCode = 1;
