@@ -68,10 +68,21 @@ Benchmarking different React based APIs and how many renders are possible a seco
 ```
 yarn run bench:react
 
-Aesthetic (useCss) x 146 ops/sec ±3.80% (56 runs sampled)
+Aesthetic (createStyled) x 91.96 ops/sec ±3.53% (54 runs sampled)
+Aesthetic (useCss) x 146 ops/sec ±1.55% (58 runs sampled)
+Aesthetic (useStyles) x 93.01 ops/sec ±2.98% (55 runs sampled)
 ```
 
-|               | Aesthetic | Aphrodite | Emotion | Fela | Filbert | JSS | Stitches | Style9 | Styletron |
-| ------------- | :-------: | :-------: | :-----: | :--: | :-----: | :-: | :------: | :----: | :-------: |
-| Design system |    🟢     |    🔴     |   🔴    |  🔴  |   🔴    | 🔴  |    🟢    |   🔴   |    🔴     |
-| Variants      |    🟢     |    🔴     |   🔴    |  🔴  |   🔴    | 🔴  |    🟢    |   🔴   |    🔴     |
+|                      | Aesthetic | Aphrodite | Emotion | Fela | Filbert | JSS | Stitches | Style9 | Styletron |
+| -------------------- | :-------: | :-------: | :-----: | :--: | :-----: | :-: | :------: | :----: | :-------: |
+| CSS variables        |    🟢     |           |         |      |         |     |          |        |           |
+| Design system        |    🟢     |           |         |      |         |     |          |        |           |
+| Directionality (RTL) |    🟢     |           |         |      |         |     |          |        |           |
+| Direction context    |    🟢     |           |         |      |         |     |          |        |           |
+| Hooks                |    🟢     |           |         |      |         |     |          |        |           |
+| HOCs                 |    🟢     |           |         |      |         |     |          |        |           |
+| Styled components    |    🟢     |           |         |      |         |     |          |        |           |
+| Themes               |    🟢     |           |         |      |         |     |          |        |           |
+| Theme context        |    🟢     |           |         |      |         |     |          |        |           |
+| Nested themes        |    🟢     |           |         |      |         |     |          |        |           |
+| Variants             |    🟢     |           |         |      |         |     |          |        |           |

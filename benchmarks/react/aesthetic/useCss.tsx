@@ -1,6 +1,6 @@
 import React from 'react';
 import { Rule, useCss } from '@aesthetic/react';
-import { Table, TableRow, TableRowProps } from '../Table';
+import { Table, TableRow as BaseTableRow, TableRowProps } from '../Table';
 
 const rowStyles: Rule = {
   backgroundColor: '#fff',
@@ -13,10 +13,10 @@ const rowStyles: Rule = {
   },
 };
 
-function Row(props: Omit<TableRowProps, 'className'>) {
+function TableRow(props: Omit<TableRowProps, 'className'>) {
   const className = useCss(rowStyles);
 
-  return <TableRow className={className} {...props} />;
+  return <BaseTableRow className={className} {...props} />;
 }
 
 const tableStyles: Rule = {
@@ -44,7 +44,7 @@ function AestheticUseCss() {
 
   return (
     <Table className={className}>
-      {(data) => data.map((item) => <Row key={item.id} {...item} />)}
+      {(data) => data.map((item) => <TableRow key={item.id} {...item} />)}
     </Table>
   );
 }

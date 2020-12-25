@@ -29,7 +29,9 @@ function format(label, stats) {
 // Run all benchmarks
 async function benchmark() {
   try {
+    await run('Aesthetic (createStyled)', 'aesthetic/createStyled.tsx');
     await run('Aesthetic (useCss)', 'aesthetic/useCss.tsx');
+    await run('Aesthetic (useStyles)', 'aesthetic/useStyles.tsx');
   } catch (error) {
     console.error(error);
     process.exitCode = 1;

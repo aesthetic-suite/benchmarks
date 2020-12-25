@@ -26,7 +26,7 @@ function createFakeData() {
 }
 
 export interface TableRowProps extends Item {
-  className: string;
+  className?: string;
 }
 
 export function TableRow({ className, id, name, currency, amount, date }: TableRowProps) {
@@ -40,13 +40,12 @@ export function TableRow({ className, id, name, currency, amount, date }: TableR
   );
 }
 
-export function Table({
-  children,
-  className,
-}: {
+export interface TableProps {
   children: (data: Item[]) => React.ReactNode;
-  className: string;
-}) {
+  className?: string;
+}
+
+export function Table({ children, className }: TableProps) {
   const data = useMemo(() => createFakeData(), []);
 
   return (
