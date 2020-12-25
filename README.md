@@ -76,14 +76,14 @@ Aphrodite [no selectors] x 154 ops/sec ±4.69% (54 runs sampled)
 
 |                      | Aesthetic | Aphrodite | Emotion | Fela | Filbert | JSS | Stitches | Style9 | Styletron |
 | -------------------- | :-------: | :-------: | :-----: | :--: | :-----: | :-: | :------: | :----: | :-------: |
-| CSS variables        |    🟢     |    🔴     |         |      |         |     |          |        |           |
-| Design system        |    🟢     |    🔴     |         |      |         |     |          |        |           |
-| Directionality (RTL) |    🟢     |    🔴     |         |      |         |     |          |        |           |
-| Direction context    |    🟢     |    🔴     |         |      |         |     |          |        |           |
-| Hooks                |    🟢     |    🔴     |         |      |         |     |          |        |           |
-| HOCs                 |    🟢     |    🔴     |         |      |         |     |          |        |           |
-| Styled components    |    🟢     |    🔴     |         |      |         |     |          |        |           |
-| Themes               |    🟢     |    🔴     |         |      |         |     |          |        |           |
-| Theme context        |    🟢     |    🔴     |         |      |         |     |          |        |           |
-| Nested themes        |    🟢     |    🔴     |         |      |         |     |          |        |           |
-| Variants             |    🟢     |    🔴     |         |      |         |     |          |        |           |
+| CSS variables        |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |
+| Design system        |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |
+| Directionality (RTL) |    🟢     |    🔴     |   🔵    |      |         |     |          |        |           |
+| Direction context    |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |
+| Hooks                |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |
+| HOCs                 |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |
+| Styled components    |    🟢     |    🔴     |   🟢    |      |         |     |          |        |           |
+| Themes               |    🟢     |    🔴     |   🟢    |      |         |     |          |        |           |
+| Theme context        |    🟢     |    🔴     |   🟢    |      |         |     |          |        |           |
+| Nested themes        |    🟢     |    🔴     |   🟢    |      |         |     |          |        |           |
+| Variants             |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |

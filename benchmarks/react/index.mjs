@@ -7,7 +7,9 @@ const debug = process.env.DEBUG === 'true';
 const suite = new Benchmark();
 const stats = new Map();
 
-async function run(label, path) {
+async function run(lib, label, path) {
+  process.env.LIB = lib;
+
   stats.set(
     label,
     await suite.run(`benchmarks/react/${path}`, {
@@ -29,11 +31,16 @@ function format(label, stats) {
 // Run all benchmarks
 async function benchmark() {
   try {
-    await run('Aesthetic (createStyled)', 'aesthetic/createStyled.tsx');
-    await run('Aesthetic (useCss)', 'aesthetic/useCss.tsx');
-    await run('Aesthetic (useStyles)', 'aesthetic/useStyles.tsx');
+    await run('aesthetic', 'Aesthetic (createStyled)', 'aesthetic/createStyled.tsx');
+    await run('aesthetic', 'Aesthetic (useCss)', 'aesthetic/useCss.tsx');
+    await run('aesthetic', 'Aesthetic (useStyles)', 'aesthetic/useStyles.tsx');
 
-    await run('Aphrodite [no selectors]', 'aphrodite/index.tsx');
+    await run('aphrodite', 'Aphrodite [no selectors]', 'aphrodite/index.tsx');
+
+    await run('emotion', 'Emotion (css: object)', 'emotion/css-object.tsx');
+    await run('emotion', 'Emotion (css: string)', 'emotion/css-string.tsx');
+    await run('emotion', 'Emotion (styled: string)', 'emotion/styled-string.tsx');
+    await run('emotion', 'Emotion (styled: object)', 'emotion/styled-object.tsx');
   } catch (error) {
     console.error(error);
     process.exitCode = 1;
