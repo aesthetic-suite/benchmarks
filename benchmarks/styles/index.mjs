@@ -1,5 +1,5 @@
 import Benchmark from 'benchmark';
-import jsdom from 'jsdom';
+import '../setupDOM.mjs';
 import { prepareStats, formatStats } from '../helpers.mjs';
 import aesthetic from './aesthetic.mjs';
 import aphrodite from './aphrodite.mjs';
@@ -13,12 +13,6 @@ import styletron from './styletron.mjs';
 // import trousers from './trousers.mjs'; INVALID ESM
 
 const suite = new Benchmark.Suite();
-const dom = new jsdom.JSDOM(
-  '<!DOCTYPE html><html><head><title>Benchmarks</title></head><body></body></html>',
-);
-
-global.window = dom.window;
-global.document = dom.window.document;
 
 // Register all cases
 aesthetic(suite);
