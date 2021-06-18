@@ -73,26 +73,29 @@ Benchmarking different React based APIs and how many renders are possible a seco
 ```
 yarn run bench:react
 
-Emotion (css: string) x 148 ops/sec ±3.18% (56 runs sampled)
-Aphrodite [no selectors] x 148 ops/sec ±3.50% (56 runs sampled)
-Aesthetic (useCss) x 138 ops/sec ±5.07% (52 runs sampled)
-Aesthetic (useStyles) x 137 ops/sec ±5.37% (56 runs sampled)
-Emotion (css: object) x 134 ops/sec ±5.11% (57 runs sampled)
-Emotion (styled: string) x 134 ops/sec ±3.37% (55 runs sampled)
-Emotion (styled: object) x 130 ops/sec ±5.13% (54 runs sampled)
-Aesthetic (createStyled) x 128 ops/sec ±4.42% (54 runs sampled)
+Aphrodite x 48.04 ops/sec ±2.78% (52 runs sampled)
+Aesthetic (useStyles) x 46.80 ops/sec ±1.91% (58 runs sampled)
+Emotion (styled: object) x 46.21 ops/sec ±2.37% (57 runs sampled)
+Stitches (styled) x 46.07 ops/sec ±2.47% (57 runs sampled)
+Emotion (css: string) x 45.65 ops/sec ±3.00% (57 runs sampled)
+Aesthetic (useCss) x 45.52 ops/sec ±2.68% (57 runs sampled)
+Emotion (styled: string) x 44.95 ops/sec ±2.80% (55 runs sampled)
+Emotion (css: object) x 44.33 ops/sec ±3.53% (55 runs sampled)
+Aesthetic (styled) x 41.48 ops/sec ±2.81% (52 runs sampled)
 ```
 
 |                      | Aesthetic | Aphrodite | Emotion | Fela | Filbert | JSS | Stitches | Style9 | Styletron |
 | -------------------- | :-------: | :-------: | :-----: | :--: | :-----: | :-: | :------: | :----: | :-------: |
-| CSS variables        |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |
-| Design system        |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |
-| Directionality (RTL) |    🟢     |    🔴     |   🔵    |      |         |     |          |        |           |
-| Direction context    |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |
-| Hooks                |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |
-| HOCs                 |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |
-| Styled components    |    🟢     |    🔴     |   🟢    |      |         |     |          |        |           |
-| Themes               |    🟢     |    🔴     |   🟢    |      |         |     |          |        |           |
-| Theme context        |    🟢     |    🔴     |   🟢    |      |         |     |          |        |           |
-| Nested themes        |    🟢     |    🔴     |   🟢    |      |         |     |          |        |           |
-| Variants             |    🟢     |    🔴     |   🔴    |      |         |     |          |        |           |
+| CSS variables        |    🟢     |    🔴     |   🔴    |      |         |     |    🔴    |        |           |
+| Design system        |    🟢     |    🔴     |   🔴    |      |         |     |    🔴    |        |           |
+| Directionality (RTL) |    🟢     |    🔴     |   🔵    |      |         |     |    🔴    |        |           |
+| Direction context    |    🟢     |    🔴     |   🔴    |      |         |     |    🔴    |        |           |
+| Hooks                |    🟢     |    🔴     |   🔴    |      |         |     |    🔴    |        |           |
+| HOCs                 |    🟢     |    🔴     |   🔴    |      |         |     |    🔴    |        |           |
+| Styled components    |    🟢     |    🔴     |   🟢    |      |         |     |    🟢    |        |           |
+| Themes               |    🟢     |    🔴     |   🟢    |      |         |     |    🟢    |        |           |
+| Theme context        |    🟢     |    🔴     |   🟢    |      |         |     |    🔴    |        |           |
+| Nested themes        |    🟢     |    🔴     |   🟢    |      |         |     |    🔴    |        |           |
+| Variants             |    🟢     |    🔴     |   🔴    |      |         |     |    🟢    |        |           |
+| Compound variants    |    🟢     |    🔴     |   🔴    |      |         |     |    🟢    |        |           |
+| Server rendering     |    🟢     |    🔴     |   🟢    |      |         |     |    🟢    |        |           |

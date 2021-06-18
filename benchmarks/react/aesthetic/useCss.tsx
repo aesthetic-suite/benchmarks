@@ -7,9 +7,11 @@ const rowStyles: Rule = {
   ':hover': {
     backgroundColor: '#eee',
   },
-  '> td': {
-    border: '1px solid #ccc',
-    padding: 8,
+  '@selectors': {
+    '> td': {
+      border: '1px solid #ccc',
+      padding: 8,
+    },
   },
 };
 
@@ -28,19 +30,23 @@ const tableStyles: Rule = {
   border: '1px solid #ccc',
   borderCollapse: 'collapse',
   borderSpacing: 0,
-  '> thead > tr': {
-    backgroundColor: '#eee',
-    '> th': {
-      border: '1px solid #ccc',
-      padding: 8,
-      fontWeight: 'bold',
-      textAlign: 'center',
+  '@selectors': {
+    '> thead > tr': {
+      backgroundColor: '#eee',
+      '@selectors': {
+        '> th': {
+          border: '1px solid #ccc',
+          padding: 8,
+          fontWeight: 'bold',
+          textAlign: 'center',
+        },
+      },
     },
   },
 };
 
 function AestheticUseCss() {
-  const className = useCss(tableStyles);
+  const { className } = useCss(tableStyles);
 
   return (
     <Table className={className}>

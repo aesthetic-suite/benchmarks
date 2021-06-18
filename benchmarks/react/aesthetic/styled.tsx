@@ -1,9 +1,9 @@
 import React from 'react';
-import { createStyled, ThemeProvider } from '@aesthetic/react';
+import { styled, ThemeProvider } from '@aesthetic/react';
 import { Table as BaseTable, TableRow as BaseTableRow } from '../Table';
 import './setup';
 
-const TableRow = createStyled(BaseTableRow, {
+const TableRow = styled(BaseTableRow, {
   backgroundColor: '#fff',
   ':hover': {
     backgroundColor: '#eee',
@@ -16,7 +16,7 @@ const TableRow = createStyled(BaseTableRow, {
   },
 });
 
-const Table = createStyled(BaseTable, {
+const Table = styled(BaseTable, {
   width: '100%',
   maxWidth: '100%',
   margin: 0,
@@ -40,7 +40,7 @@ const Table = createStyled(BaseTable, {
   },
 });
 
-function AestheticCreateStyled() {
+function AestheticStyled() {
   return (
     <ThemeProvider name="day">
       <Table>{(data) => data.map((item) => <TableRow key={item.id} {...item} />)}</Table>
@@ -48,4 +48,4 @@ function AestheticCreateStyled() {
   );
 }
 
-export default () => <AestheticCreateStyled />;
+export default () => <AestheticStyled />;

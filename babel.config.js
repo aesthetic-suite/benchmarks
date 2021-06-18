@@ -8,3 +8,5 @@ switch (process.env.LIB) {
     config.plugins.push('@emotion/babel-preset-css-prop');
     break;
 }
+
+module.exports = config;

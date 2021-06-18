@@ -22,16 +22,18 @@ async function run(lib, label, path) {
 // Run all benchmarks
 async function benchmark() {
   try {
-    await run('aesthetic', 'Aesthetic (createStyled)', 'aesthetic/createStyled.tsx');
+    await run('aesthetic', 'Aesthetic (styled)', 'aesthetic/styled.tsx');
     await run('aesthetic', 'Aesthetic (useCss)', 'aesthetic/useCss.tsx');
     await run('aesthetic', 'Aesthetic (useStyles)', 'aesthetic/useStyles.tsx');
 
-    await run('aphrodite', 'Aphrodite [no selectors]', 'aphrodite/index.tsx');
+    await run('aphrodite', 'Aphrodite', 'aphrodite/index.tsx');
 
     await run('emotion', 'Emotion (css: object)', 'emotion/css-object.tsx');
     await run('emotion', 'Emotion (css: string)', 'emotion/css-string.tsx');
     await run('emotion', 'Emotion (styled: string)', 'emotion/styled-string.tsx');
     await run('emotion', 'Emotion (styled: object)', 'emotion/styled-object.tsx');
+
+    await run('stitches', 'Stitches (styled)', 'stitches/styled.tsx');
   } catch (error) {
     console.error(error);
     process.exitCode = 1;
