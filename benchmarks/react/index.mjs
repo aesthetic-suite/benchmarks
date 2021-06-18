@@ -8,15 +8,13 @@ const results = [];
 async function run(lib, label, path) {
   process.env.LIB = lib;
 
-  results.push(
-    prepareStats(
-      label,
-      await suite.run(`benchmarks/react/${path}`, {
-        debug,
-        devtools: debug,
-      }),
-    ),
-  );
+  const result = await suite.run(`benchmarks/react/${path}`, {
+    debug,
+    devtools: debug,
+  });
+
+  results.push(prepareStats(label, result));
+  console.log(`Ran ${label}...`);
 }
 
 // Run all benchmarks
@@ -33,7 +31,15 @@ async function benchmark() {
     await run('emotion', 'Emotion (styled: string)', 'emotion/styled-string.tsx');
     await run('emotion', 'Emotion (styled: object)', 'emotion/styled-object.tsx');
 
+    await run('fela', 'Fela (useFela)', 'fela/useFela.tsx');
+
+    await run('filbert', 'Filbert (css: string)', 'filbert/css-string.tsx');
+    await run('filbert', 'Filbert (styled: string)', 'filbert/css-string.tsx');
+
     await run('stitches', 'Stitches (styled)', 'stitches/styled.tsx');
+
+    await run('styled-components', 'Styled (string)', 'styled-components/styled-string.tsx');
+    await run('styled-components', 'Styled (object)', 'styled-components/styled-object.tsx');
   } catch (error) {
     console.error(error);
     process.exitCode = 1;

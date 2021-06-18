@@ -32,6 +32,7 @@ const results = [];
 suite
   .on('cycle', function cycle(event) {
     results.push(prepareStats(event.target.name, event.target));
+    console.log(`Ran ${event.target.name}...`);
   })
   .on('complete', function complete() {
     results
