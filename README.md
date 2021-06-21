@@ -22,15 +22,15 @@ Benchmarking raw CSS insertion with either an object or string.
 ```
 yarn run bench:styles
 
-Filbert (string) x 632,558 ops/sec ±0.60% (90 runs sampled)
-Aesthetic (object) x 245,619 ops/sec ±1.67% (88 runs sampled)
-Fela (object) x 197,857 ops/sec ±0.58% (94 runs sampled)
-Emotion (string) x 176,872 ops/sec ±0.74% (95 runs sampled)
-Emotion (object) x 113,391 ops/sec ±1.08% (95 runs sampled)
-Styletron (object) x 98,595 ops/sec ±1.04% (92 runs sampled)
-Stitches (object) x 98,053 ops/sec ±0.67% (94 runs sampled)
-Aphrodite (object) x 24,433 ops/sec ±0.83% (92 runs sampled)
-JSS (object) x 7,543 ops/sec ±3.99% (85 runs sampled)
+Filbert (string) x 666,323 ops/sec ±0.38% (94 runs sampled)
+Aesthetic (object) x 262,670 ops/sec ±1.38% (91 runs sampled)
+Fela (object) x 200,747 ops/sec ±1.52% (97 runs sampled)
+Emotion (string) x 187,801 ops/sec ±0.96% (95 runs sampled)
+Emotion (object) x 109,188 ops/sec ±1.56% (94 runs sampled)
+Styletron (object) x 93,898 ops/sec ±0.29% (96 runs sampled)
+Stitches (object) x 86,100 ops/sec ±13.15% (87 runs sampled)
+Aphrodite (object) x 23,649 ops/sec ±0.50% (96 runs sampled)
+JSS (object) x 6,736 ops/sec ±10.33% (75 runs sampled)
 ```
 
 |                         | Aesthetic | Aphrodite | Emotion | Fela | Filbert | JSS | Stitches | Style9 | Styletron | Trousers |

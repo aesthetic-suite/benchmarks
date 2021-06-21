@@ -2,67 +2,67 @@
 # yarn lockfile v1
 
 
-"@aesthetic/core-react@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@aesthetic/core-react/-/core-react-0.2.0.tgz#9e1cb11329d802d458e49c94f4f4912b2afe7d9f"
-  integrity sha512-i0bd5j+kqtz8v5QEw5Ri2hp29xrQEuV1Lrxy4GwTmTg//ywvxdYo+5MhYCfYV6S5oHGQMCzs1aBi5aZfLLCiBw==
+"@aesthetic/core-react@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@aesthetic/core-react/-/core-react-0.2.1.tgz#1e0daca2dd67f0c8ceb85d0cc79bd4df75985c44"
+  integrity sha512-RPhMbncduSsqMWkoGEUmdoUpjJy6plKtY3UIz8wHE5OmQIByFgLlFTSmwcibiq5l7038bP8vGYvvfSZMR8+F1g==
   dependencies:
-    "@aesthetic/utils" "^0.8.2"
+    "@aesthetic/utils" "^0.8.4"
     direction "^1.0.4"
     hoist-non-react-statics "^3.3.2"
 
-"@aesthetic/core@^0.10.3", "@aesthetic/core@^0.10.4":
-  version "0.10.4"
-  resolved "https://registry.yarnpkg.com/@aesthetic/core/-/core-0.10.4.tgz#d08cc084e49bcd5da6df4ae96ca8b9d431e8d473"
-  integrity sha512-3BIZX5ri9guPr4DrB0GAczYvqZ7I2Xe3e6sIw4fV2TTZB6cAaH63/9ZxE05e905TnBo2Jl7BjeYyA5DNgWsYYQ==
+"@aesthetic/core@^0.10.6":
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/@aesthetic/core/-/core-0.10.6.tgz#5b38826cb14cbe6f3748950e011d592b2a05bfd1"
+  integrity sha512-pZmA+kyjjIq1UBDofaqWEm2r3WKk+X+qXwokS/tcWJlyoPuQesP0Yu28yabIp04MIwm/F3h3OG845raK4nWoMQ==
   dependencies:
-    "@aesthetic/system" "^0.9.4"
-    "@aesthetic/types" "^0.6.3"
-    "@aesthetic/utils" "^0.8.3"
+    "@aesthetic/system" "^0.9.6"
+    "@aesthetic/types" "^0.6.5"
+    "@aesthetic/utils" "^0.8.4"
 
 "@aesthetic/design-systems@^0.1.3":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@aesthetic/design-systems/-/design-systems-0.1.3.tgz#6653ccf5a50f85498723e86c6b7200e0db00b504"
   integrity sha512-k9Is14P2Vo8gdcMXNsRGXh7X4XnGURXkR6F4KqFzhlq+NgbT8J1dNCBOLKAacMpg15Ha8MbhB1rGMrcIUqbDYw==
 
-"@aesthetic/react@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@aesthetic/react/-/react-0.7.0.tgz#64e697ef9ef613af896e2f0e2231af49d2858835"
-  integrity sha512-3HZ3CM6wUAXygmxa/jsGVjuQ9g1mU0ITAEa8R793MTLc0+vNuwdxd1xa/f46NJow39jxeSDFHxVD4JYpjQkERA==
+"@aesthetic/react@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aesthetic/react/-/react-0.7.1.tgz#7ab96131e0003846bd0f133b5d6141b4493071d1"
+  integrity sha512-8IYQgOdFtF1OtykymCJon+kAKvSJfoqMmmKAN38XK4jWIqRUnhH5pz1Fd5Qi1VBdbtEllVcPyLL31Nn4RWr+VQ==
   dependencies:
-    "@aesthetic/core" "^0.10.3"
-    "@aesthetic/core-react" "^0.2.0"
-    "@aesthetic/style" "^0.9.3"
-    "@aesthetic/utils" "^0.8.2"
+    "@aesthetic/core" "^0.10.6"
+    "@aesthetic/core-react" "^0.2.1"
+    "@aesthetic/style" "^0.9.6"
+    "@aesthetic/utils" "^0.8.4"
 
-"@aesthetic/style@^0.9.3", "@aesthetic/style@^0.9.4":
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/@aesthetic/style/-/style-0.9.4.tgz#e6bcd59bd77bd6c0769bac9ce6c8967a334554ce"
-  integrity sha512-DQAiFSe8TVhXwPo3b+Vq3Ph+30ElO4ucicdIKAHZ/FEKj75XCrkB6xpozA3+4RONlj08K9OMuoMjTVnfH/M8eg==
+"@aesthetic/style@^0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@aesthetic/style/-/style-0.9.6.tgz#cdff2babb7be832e8d7b1d05c7dee50164327035"
+  integrity sha512-pLa60jAGaKHgRMY2dwS2UUHFRId5eBaw/Lj/zDudJY0ozwQpCaow2v3NKJ8iYLmMDKHd19m4fVowrzZTeCV5sQ==
   dependencies:
-    "@aesthetic/types" "^0.6.3"
-    "@aesthetic/utils" "^0.8.3"
+    "@aesthetic/types" "^0.6.5"
+    "@aesthetic/utils" "^0.8.4"
     sort-css-media-queries "^1.5.4"
 
-"@aesthetic/system@^0.9.4":
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/@aesthetic/system/-/system-0.9.4.tgz#d8100365d57db4ac4caca19d678d547142bda6ea"
-  integrity sha512-itqtYscLF+VAIhuNtUy+cpq5hXm4xA/4/gbkYooSluiscO4zJ+r/jnTERgpxQG1OAvkR1knSzjWk2SNOD0Xvlg==
+"@aesthetic/system@^0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@aesthetic/system/-/system-0.9.6.tgz#d3d6542ae7ff56ca7bdb392db8f866945f3ec91b"
+  integrity sha512-SOyNFDT6sn2Gc1ESaO7fuxFKGA7QzlTxB4SUlJ5MsCxJJOEdU4SBCiHNEbjNWdtMq25eEqSmmLcb2eFlgwmJGg==
   dependencies:
-    "@aesthetic/types" "^0.6.3"
-    "@aesthetic/utils" "^0.8.3"
+    "@aesthetic/types" "^0.6.5"
+    "@aesthetic/utils" "^0.8.4"
 
-"@aesthetic/types@^0.6.3":
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/@aesthetic/types/-/types-0.6.3.tgz#0ca77436f6945f81dd3f3b066ee70c34ef379a48"
-  integrity sha512-hEDmytkXbs3lYY9/dv2r8fKeZoIyi3g0FQo8Zaj1Vh07WXFTdqoF3Acv6V6GC7LU1sCeHjuTkKLzslzXjR8Qew==
+"@aesthetic/types@^0.6.5":
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/@aesthetic/types/-/types-0.6.5.tgz#277abf4f0a12831ccc0835c7c6e406361e277d1e"
+  integrity sha512-quZMJ+ZlLsk7FJilR9znbz5QY7lKVvDrRnvPphEM0PENiBSUjHLA0riJAaEL0tpS0rKQVjjWTb+dpLIyZFvnnw==
   dependencies:
     csstype "^3.0.8"
 
-"@aesthetic/utils@^0.8.2", "@aesthetic/utils@^0.8.3":
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/@aesthetic/utils/-/utils-0.8.3.tgz#c0278b83783786f7d9e6ecf51a21cdfa795c5dc6"
-  integrity sha512-6uRmC8/YnZ/A4djYDvytsIySZivFKOnXs4QXVq1af80vL6iJ1fEUOBJMWx4lCkMEm90sqVzLbWESp7UoV1PfQw==
+"@aesthetic/utils@^0.8.4":
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/@aesthetic/utils/-/utils-0.8.4.tgz#177d1de772ab358f09e4fa59e2b37d63b344fbd2"
+  integrity sha512-/56yNUu+a/0iGDaAf7Tz0bVEFyDtlL4SRvZIjx0nWjY/BBcno77bmxHtw64BTTQGtyLNUVcAZdevSM9pnkYdsQ==
   dependencies:
     string-hash "^1.1.3"
 
@@ -1361,10 +1361,10 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react-dom@^17.0.7":
-  version "17.0.7"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.7.tgz#b8ee15ead9e5d6c2c858b44949fdf2ebe5212232"
-  integrity sha512-Wd5xvZRlccOrCTej8jZkoFZuZRKHzanDDv1xglI33oBNFMWrqOSzrvWFw7ngSiZjrpJAzPKFtX7JvuXpkNmQHA==
+"@types/react-dom@^17.0.8":
+  version "17.0.8"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.8.tgz#3180de6d79bf53762001ad854e3ce49f36dd71fc"
+  integrity sha512-0ohAiJAx1DAUEcY9UopnfwCE9sSMDGnY/oXjWMax6g3RpzmTt2GMyMVAXcbn0mo8XAff0SbQJl2/SBU+hjSZ1A==
   dependencies:
     "@types/react" "*"
 
